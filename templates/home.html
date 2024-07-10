@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer satisfaction</title>
+<body>
+    <div class="margin-center">
+        <br><a href="http://127.0.0.1:5000"></a>
+    </div>
+</body>
+<style>
+    body{
+        background-image:url("{{ url_for('static',filename='254367.webp') }}");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+    <div style="text-align: center;">
+
+    <h1><b>Airline Loyal and Disloyal Customer Segmentation</b></h1>
+    </div>
+    <div>
+    <p>"The sky is not a limit <br>it's just the beginning....</p></div>
+
+</head>
+<body>
+    <main>
+    <div style="text-align: center;">
+    <form action="{{ url_for('prediction') }}" method="post"><br>
+    <label for="Enter_age"><b>Enter Age :-</b></label><br><br>
+    <input type="number" name="Enter_age" style="width: 300px; border-color: blue; height: 25px;"><br><br>
+    <label for="Flight_distance"><b>Enter Distance :- </b></label><br><br>
+    <input type="number" name="Flight_distance" style="width: 300px; border-color: blue; height: 25px;"><br><br>
+    <label for="Travel_class"><b>Travel class :-</b></label><br><br>
+    <select name="Travel_class" style="width: 300px; border-color: blue; height: 30px;">
+        <option>Business</option>
+        <option>Eco</option>
+        <option>Eco-Plus</option>
+    </select><br><br>
+    <label for="Travel_type"><b>Travel Type :-</b></label><br><br>
+    <select name="Travel_type" style="width: 300px; border-color: blue; height: 30px;">
+        <option>Business</option>
+        <option>Personal</option>
+    </select><br><br>
+    <label for="Inflight_entertainment"><b>Inflight Entertainment :-</b></label><br><br>
+    <select name="Inflight_entertainment" style="width: 300px; border-color: blue; height: 30px;">
+        <option>Select from 1 to 5</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select><br><br>
+    <label for="Baggage_handling"><b>Baggage Handling :-</b></label><br><br>
+    <select name="Baggage_handling" style="width: 300px; border-color: blue; height: 30px;">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        </select><br><br>
+    <label for="Cleanliness"><b>Cleanliness :-</b></label><br><br>
+    <select name="Cleanliness" style="width: 300px; border-color: blue; height: 30px;">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option></select><br><br>
+    <label for="Departure_delay_in_minutes"><b>Departure Delay(in minutes) :-</b></label><br><br>
+    <input type="number" name="Departure_delay_in_minutes" style="width: 300px; border-color: blue; height: 25px;"><br><br>
+    <label for="Arrival_delay_in_Minutes"><b>Arrival Delay(in minutes) :-</b></label><br><br>
+    <input type="number" name="Arrival_delay_in_Minutes" style="width: 300px; border-color: blue; height: 25px;"><br><br>
+    <label for="Gender"><b>Select Gender :-</b></label><br><br>
+    <select name="Gender" style="width: 300px; border-color: blue; height: 30px;">
+        <option>Male</option>
+        <option>Female</option>
+    </select><br><br>
+    <label for="Customer_type"><b>Customer Type :-</b></label><br><br>
+    <select name="Customer_type" style="width: 300px; border-color: blue; height: 30px;">
+    <option>Loyal</option>
+    <option>Disloyal</option></select><br><br>
+    <button type="submit" style="width: 100px;background-color: gold; height: 30px; color: black;">SUBMIT</button>
+    </form>
+    </div>
+    </main>
+    <footer>
+        <div
+        style="text-align: center;">
+        <p>@2024 All Rights Reserved by Ronak Bedi</p></div>
+
+    </footer>
+</body>
+</html>
